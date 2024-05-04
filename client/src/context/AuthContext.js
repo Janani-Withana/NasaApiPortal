@@ -33,14 +33,14 @@ export const AuthContextProvider = ({children}) => {
           location.pathname === "/register"
         ) {
           setTimeout(() => {
-            navigate("/login", { replace: true });
+            navigate("/home", { replace: true });
           }, 500);
         } else {
           navigate(location.pathname ? location.pathname : "/home");
         }
         setUser(result);
       } else {
-        navigate("/login", { replace: true });
+        navigate("/home", { replace: true });
       }
     } catch (err) {
       console.log(err);

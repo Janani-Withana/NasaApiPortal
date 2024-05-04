@@ -27,7 +27,7 @@ function App() {
     <Switch>
       <Route path='/register' element={<Register/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
-      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
       <Route path='/apod' element={<Apod/>}></Route>
       <Route path='/mars' element={<Mars/>}></Route>
       <Route path='/pictureoftheday' element={<PictureoftheDay/>}></Route>
