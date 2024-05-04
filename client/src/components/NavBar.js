@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(10, 10, 10, 0.6)', 
   },
   loggedOutAppBar: {
-    backgroundColor: 'rgba(200, 200, 200, 0.6)',  
+    backgroundColor: 'rgba(10, 10, 10, 0.6)',  
   },
 }));
 
