@@ -206,7 +206,7 @@ export const AuthContextProvider = ({children}) => {
     return <AuthContext.Provider value={{loginUser,registerUser,user , setUser}}>
         { <ToastContainer autoClose={2000}/> }
         {children}
-        </AuthContext.Provider>
+    </AuthContext.Provider>
 };
 
 export default AuthContext;
