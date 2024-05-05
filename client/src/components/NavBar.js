@@ -54,14 +54,14 @@ export default function Navbar({ title = "NASA API PORTAL" }) {
             <Button color="inherit" className={classes.navLink} onClick={() => {
               setUser(null);
               localStorage.clear();
-              navigate("/login", { replace: true });
+              navigate("/", { replace: true });
             }}>
               Logout
             </Button>
           </>
         ) : (
           <>
-            <Button color="inherit" className={classes.navLink} component={RouterLink} to="/login">
+            <Button color="inherit" className={classes.navLink} component={RouterLink} to="/">
               Login
             </Button>
             <Button color="inherit" className={classes.navLink} component={RouterLink} to="/register">

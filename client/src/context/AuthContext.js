@@ -29,18 +29,18 @@ export const AuthContextProvider = ({children}) => {
   
       if (!result.error) {
         if (
-          location.pathname === "/login" ||
+          location.pathname === "/" ||
           location.pathname === "/register"
         ) {
           setTimeout(() => {
-            navigate("/home", { replace: true });
+            navigate("/", { replace: true });
           }, 500);
         } else {
           navigate(location.pathname ? location.pathname : "/home");
         }
         setUser(result);
       } else {
-        navigate("/home", { replace: true });
+        navigate("/", { replace: true });
       }
     } catch (err) {
       console.log(err);
@@ -50,7 +50,7 @@ export const AuthContextProvider = ({children}) => {
     //login request
     const loginUser = async (userData) => {
         try {
-            const res =  await fetch(`http://localhost:8000/api/login`, {
+            const res =  await fetch(`https://nasaapiportal-4.onrender.com/`, {
                 method: "POST",
                 headers: {
                     "Content-Type" : "application/json",
@@ -76,7 +76,7 @@ export const AuthContextProvider = ({children}) => {
     //register request
     const registerUser = async (userData) => {
         try {
-          const res = await fetch(`http://localhost:8000/api/register`, {
+          const res = await fetch(`https://nasaapiportal-4.onrender.com/register`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const AuthContextProvider = ({children}) => {
     
           if (!result.error) {
             toast.success("user registered successfully! login into your account!");
-            navigate("/login", { replace: true });
+            navigate("/", { replace: true });
           } else {
             toast.error(result.error);
           }
