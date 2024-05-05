@@ -13,7 +13,7 @@ const app = express();
 //middleware
 app.use(express.json())
 app.use(morgan("tiny"))
-app.use(require("cors")({origin:['https://nasaapiportal-4.onrender.com/']}))
+app.use(require("cors")())
 
 //routes
 app.get("/protected",auth,(req,res) =>{

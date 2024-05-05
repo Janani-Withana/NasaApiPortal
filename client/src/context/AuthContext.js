@@ -125,7 +125,7 @@ export const AuthContextProvider = ({children}) => {
   const checkUserLoggedIn = async () => {
 
     try {
-      const res = await fetch(`https://nasaapiportal-4.onrender.com/`, {
+      const res = await fetch(`https://nasaapiportal-4.onrender.com`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -156,7 +156,7 @@ export const AuthContextProvider = ({children}) => {
     //login request
     const loginUser = async (userData) => {
         try {
-            const res =  await fetch(`https://nasaapiportal-4.onrender.com/login`, {
+            const res =  await fetch(`https://nasaapiportal-4.onrender.com/api/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type" : "application/json",
@@ -182,7 +182,7 @@ export const AuthContextProvider = ({children}) => {
     //register request
     const registerUser = async (userData) => {
         try {
-          const res = await fetch(`https://nasaapiportal-4.onrender.com/register`, {
+          const res = await fetch(`https://nasaapiportal-4.onrender.com/api/register`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
