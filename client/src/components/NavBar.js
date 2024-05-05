@@ -40,7 +40,7 @@ export default function Navbar({ title = "NASA API PORTAL" }) {
   return (
     <AppBar position="absolute" className={`${classes.appBar} ${user ? classes.loggedInAppBar : classes.loggedOutAppBar}`}>
       <Toolbar>
-        <IconButton component={RouterLink} to="/" edge="start" color="inherit" aria-label="home">
+        <IconButton component={RouterLink} to="/home" edge="start" color="inherit" aria-label="home">
           <img src={logo} alt="Logo" className={classes.logo} />
         </IconButton>
         <Typography variant="h6" className={classes.title}>
@@ -54,14 +54,14 @@ export default function Navbar({ title = "NASA API PORTAL" }) {
             <Button color="inherit" className={classes.navLink} onClick={() => {
               setUser(null);
               localStorage.clear();
-              navigate("/", { replace: true });
+              navigate("/login", { replace: true });
             }}>
               Logout
             </Button>
           </>
         ) : (
           <>
-            <Button color="inherit" className={classes.navLink} component={RouterLink} to="/">
+            <Button color="inherit" className={classes.navLink} component={RouterLink} to="/login">
               Login
             </Button>
             <Button color="inherit" className={classes.navLink} component={RouterLink} to="/register">
