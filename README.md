@@ -1,4 +1,4 @@
-# NASA API Portal React App
+# <img src="client/src/images/logo.png" alt="NASA Logo" width="55" height="45">  NASA API Portal React App 
 
 Welcome to my NASA API Portal React application! This project showcases my skills in front-end development by integrating with NASA's public APIs to display fascinating images from space.
 
@@ -19,6 +19,8 @@ This project utilizes React functional components to create an engaging user int
 ## Technologies Used
 
 - **React:** A JavaScript library for building user interfaces, utilized for creating the frontend of this application.
+- **Node.js:** A runtime environment for executing JavaScript code outside a web browser, used for backend development.
+- **MongoDB:** A NoSQL database, employed for user authentication and storing user data securely.
 - **NASA's Public APIs:** Accessing the Astronomy Picture of the Day and Mars Rover Photos endpoints to fetch space images.
 - **Vercel:** The application is deployed using Vercel's platform, providing a seamless deployment experience.
 
@@ -38,9 +40,8 @@ To run this project locally on your machine, follow these steps:
 
 ## Credits
 
-- This project is created by [Your Name].
+- This project is created by [Janani Withana](https://github.com/Janani-Withana).
 - Images and data are sourced from NASA's public APIs.
 - Deployed with [Vercel](https://vercel.com/) & [Render](https://render.com/)
 
 Explore the wonders of space with NASA API Portal React Web App!
-
