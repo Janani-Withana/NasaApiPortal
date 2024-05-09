@@ -26,7 +26,7 @@ This project utilizes React functional components to create an engaging user int
 
 ## Deployment
 
-The application is deployed and accessible at [NASA API Portal React App](https://nasa-api-portal-cxykjf42l-janani-withanas-projects.vercel.app/). Click on the link to explore captivating images from space!
+The application is deployed and accessible at [NASA API Portal React App](https://nasa-api-portal.vercel.app/). Click on the link to explore captivating images from space!
 
 ## How to Run Locally
 
