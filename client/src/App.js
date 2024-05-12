@@ -23,7 +23,9 @@ function App() {
     <>
     <AuthContextProvider>
       <ToastContextProvider></ToastContextProvider>
-    <Layout>
+    
+    <Layout logged={['/apod', '/mars', '/home' ].includes(window.location.pathname)}>
+
     <Switch>
       <Route path='/register' element={<Register/>}></Route>
       <Route path='/' element={<Login/>}></Route>
