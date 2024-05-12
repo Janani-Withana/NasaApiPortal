@@ -20,7 +20,7 @@ export const AuthContextProvider = ({children}) => {
   const checkUserLoggedIn = async () => {
 
     try {
-      const res = await fetch(`https://nasaapiportal-4.onrender.com`, {
+      const res = await fetch(`https://nasaapiportal-4.onrender.com/api/`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
